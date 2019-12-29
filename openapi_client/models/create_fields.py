@@ -195,11 +195,11 @@ class CreateFields(object):
         :param amount: The amount of this CreateFields.  # noqa: E501
         :type: float
         """
-        if self.local_vars_configuration.client_side_validation and amount is None:  # noqa: E501
-            raise ValueError("Invalid value for `amount`, must not be `None`")  # noqa: E501
-        if (self.local_vars_configuration.client_side_validation and
-                amount is not None and amount < 0.01):  # noqa: E501
-            raise ValueError("Invalid value for `amount`, must be a value greater than or equal to `0.01`")  # noqa: E501
+        #if self.local_vars_configuration.client_side_validation and amount is None:  # noqa: E501
+        #    raise ValueError("Invalid value for `amount`, must not be `None`")  # noqa: E501
+        #if (self.local_vars_configuration.client_side_validation and
+        #        amount is not None and amount < 0.01):  # noqa: E501
+        #    raise ValueError("Invalid value for `amount`, must be a value greater than or equal to `0.01`")  # noqa: E501
 
         self._amount = amount
 
